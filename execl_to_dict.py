@@ -20,6 +20,7 @@ def read_excel_and_add_query(file_path):
                     try:
                         # 将字符串解析为 Python 对象
                         items = ast.literal_eval(value)
+                        print(" items:" ,items)
                         new_items = []
                         for item in items:
                             # 剔除 examples 字段，添加 query 字段
@@ -41,4 +42,4 @@ def read_excel_and_add_query(file_path):
 # 请替换为实际 Excel 文件路径
 file_path = r"C:\Users\LENOVO\Desktop\副本38a399995fd46b7b8e252a3ea1ed58b6_c2a5b6652f224ed90530ffec074c1896_8.xls"
 data_dict = read_excel_and_add_query(file_path)
-print(data_dict)
+# print(data_dict)
